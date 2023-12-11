@@ -1,0 +1,155 @@
+.bx-section6{
+    height: auto;
+    padding: 32px 32px 32px 32px;
+   
+
+    &--part1{
+        display: flex;
+        flex-direction: row;
+    }
+    &__fhalf{
+        width: 60%;
+        padding: 32px 32px 32px 32px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__shalf{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 6%;
+        margin-left: 7%;
+        padding: 32px 32px 32px 32px;
+       
+        
+
+    }
+    &__button{
+        width: 132px;
+        height: 42px;
+        background-color: $color4;
+        color: $color2;
+        margin-top: 60px;
+        margin-left: $spacer1;
+    }
+    &__heading{
+        padding-left: 25%;
+        font-size: $font1;
+        color: $color1;
+        padding-top: 40px;
+        opacity: .5;
+
+    }
+    &__heading1{
+        padding-left: 25%;
+        
+        font-size: $font2;
+        color: $color4;
+    }
+    &__heading2{
+        padding-left: $spacer1;
+        
+        font-size: $font2;
+        color: $color4;
+    }
+  
+}
+.input1{
+    display: flex;
+    flex-direction: row;
+     padding-left: 16px;
+      padding-top: 30px;
+    
+}
+input{
+    width: 366px;
+    height: 35px; 
+    border:  2px solid #D9D9D9;
+    padding-left: 10px;
+    margin-right: -20px;
+
+ 
+  
+}
+textarea{
+    width: 100%;
+    height: 70px;
+    margin-top: 30px;
+    border:  2px solid #D9D9D9;
+    margin-left: 16px;
+    padding-left: 10px;
+    margin-right: -20px;
+}
+@include mobile{
+    .bx-section6{
+        height: auto;
+        &--part1{
+            display: flex;
+            flex-direction: column;
+        }
+        &__shalf{
+            width: 90%;
+        }
+
+       
+        &__heading{
+            padding-left: 1%;
+            margin-right: 15%;
+            font-size: $font1;
+            color: $color1;
+            padding-top: 40px;
+            opacity: .5;
+    
+        }
+        &__heading1{
+            padding-left: 1%;
+            
+            font-size: $font2;
+            color: $color4;
+        }
+       
+    }
+    .sub{
+        border-left: none;
+    }
+    .input1{
+        display: flex;
+        flex-direction: column;
+         
+          position: relative;
+    }
+    input{
+        width: 366px;
+    height: 35px; 
+    border:  2px solid #D9D9D9;
+    padding-left: 10px;
+    margin-right: -20px;
+    position: relative;
+    margin-top: 20px;
+
+    }
+
+    svg{
+      display: none;
+    }
+
+}
+@include tablet{
+    .bx-section6{
+        height: auto;
+        &--part1{
+            display: flex;
+            flex-direction: column;
+        }
+        &__shalf{
+            width: 90%;
+        }
+        &__heading{
+            padding-left: 1%;
+        }
+        &__heading1{
+            padding-left: 1%;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.bx-section3__column{
+    width: 323px;
+    height: 350px;
+    background-color: $color8;
+    margin-left: 32px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    
+    img{
+        margin-left: 32px;
+        width: 60px; 
+        height: 60px;
+        margin-top: 20px;
+    }
+    h4{
+        margin-left: 32px;
+        color: $color2;
+    }
+    p{
+        margin-left: 32px;
+        color: $color2; 
+        opacity: .5;
+        margin-top: 15px;
+        font-size:$font1 ;
+        margin-bottom: 20px;
+        padding-bottom: 30px;
+        margin-right: 32px;
+    }
+}
+@include mobile{
+    .bx-section3__column{
+        width: auto;
+        height: auto;
+        margin-right: $spacer2;
+    }
+}
+@include tablet{
+    .bx-section3__column{
+        width: auto;
+        height: auto;
+        margin-right: $spacer2;
+    }
+}

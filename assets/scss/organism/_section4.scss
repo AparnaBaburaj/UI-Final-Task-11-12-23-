@@ -1,0 +1,107 @@
+.bx-section4{
+    height: auto;
+    padding-top: 5%;
+    
+    &__part{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        &--fhalf{
+            width: 50%;
+            height: auto;
+        }
+        &--shalf{
+            width: 50%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            margin-right: 5%;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+            h4{
+                margin-top: 10px;
+                margin-left: 20px;
+                color: $color4;
+            }
+            p{
+                margin-top: 20px;
+                opacity: .5;  
+            justify-items: justify;         
+         }
+        }
+    }
+ 
+}
+.hsec{
+    width: 100%;
+     background-color: grey;
+     opacity: .5; 
+     height: 2px;
+      margin-top: 30px;
+}
+@include mobile{
+    .bx-section4__part{
+        display: flex;
+        flex-direction: column;
+        &--fhalf{
+            margin-left: 25%;
+        }
+        &--shalf{
+            
+            margin-left: 5%;
+            
+            width: 90%;
+            margin-bottom: 5%;
+            h4{
+                margin-top: 10px;
+                margin-left: 20px;
+                color: $color4;
+                width: 100%;
+            }
+            p{
+                width: 100%;
+                margin-top: 20px;
+                opacity: .5;  
+            justify-items: justify;      
+            }
+        }
+        }
+        .hsec{
+            display: none;
+        }
+    }
+    @include tablet{
+        .bx-section4__part{
+            display: flex;
+            flex-direction: column;
+            &--fhalf{
+                margin-left: 25%;
+            }
+            &--shalf{
+                
+                margin-left: 5%;
+                
+                width: 90%;
+                margin-bottom: 5%;
+                h4{
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    color: $color4;
+                    width: 100%;
+                }
+                p{
+                    width: 100%;
+                    margin-top: 20px;
+                    opacity: .5;  
+                justify-items: justify;      
+                }
+            }
+            }
+            .hsec{
+                display: none;
+            }
+    }

@@ -1,0 +1,113 @@
+.bx-section2{
+    height: auto;
+    background-color: rgb(222, 248, 253);
+    padding-top: 1%;
+ 
+
+    &__heading{
+        padding-left: $spacer2;
+        font-size: $font1;
+        color: $color4;
+        padding-top: 40px;
+        font-weight: normal;
+       
+    }
+    &__heading1{
+        padding-left: $spacer2;
+        font-size: $font2;
+        color: $color4;
+       
+      
+    }
+
+    &--part1{
+        width:100% ;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+
+        &__fhalf{
+            width: 70%;
+            padding-left: $spacer2;
+            padding-top: 30px;
+
+            p{
+                opacity: .5;
+            }
+
+          
+        }
+        &__shalf{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            margin-right: 5%;
+            margin-left: 7%;
+            text-align: center;
+            position: relative;
+          
+        }
+        
+    }
+    &__button{
+        position: absolute;
+        width: 40%;
+        height: 42px;
+        background-color: $color4;
+        color: $color2;
+        margin-top: 20px;
+        margin-left: $spacer1;
+        margin-top: 40%;
+        margin-left: 30%;
+        font-weight: bold;
+    }
+}
+.img1{
+    position: absolute;
+    margin-left: 40%;
+}
+.bx-h4{
+    margin-top: 30%;
+    position: absolute;
+    margin-left: 20%;
+}
+
+@include mobile{
+
+    .bx-section2{
+        &--part1{
+        display: flex;
+        flex-direction: column;
+
+        &__shalf{
+            width: 70%;
+            margin-top: 2%;
+        }
+
+       
+    }
+
+}  
+  
+}
+@include tablet{
+    .bx-section2{
+        &--part1{
+        display: flex;
+        flex-direction: column;
+
+        &__shalf{
+            width: 70%;
+            margin-top: 2%;
+        }
+
+       
+    }
+
+} 
+.bx-h4{
+    margin-top: 30%;
+    position: absolute;
+    margin-left: 33%;
+}  
+}

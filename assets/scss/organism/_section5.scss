@@ -1,0 +1,53 @@
+.bx-section5{
+    height: auto;
+    background-color: $color12;
+   
+
+    &--subdiv{
+        height: auto;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    }
+    
+    &__heading{
+    
+        font-size: $font2;
+        text-align: center;
+        font-weight: bold;
+        color: $color4;
+        padding-top: 30px;
+
+    }
+    &__subheading{
+        width: 70%;
+        font-size: $font1;
+        color: $color3;
+     margin-left: 14%;
+        text-align: center;
+       
+    }
+}
+@include mobile{
+    .bx-section5--subdiv{
+        display: flex;
+        flex-direction: column;
+        margin-right: 16px;
+        margin-left: 10px;
+    }
+}
+@include tablet
+{
+    .bx-section5{
+        &--subdiv{
+        display: flex;
+        flex-direction: column;
+        margin-right: 16px;
+        margin-left: 10px;
+    }
+  
+}
+}
+
+

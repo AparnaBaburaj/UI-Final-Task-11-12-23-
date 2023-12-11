@@ -1,0 +1,43 @@
+.bx-section1{
+   
+    height: auto;
+    padding-left: 16px;
+    padding-bottom: 50px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right: $spacer2;
+
+
+    &__heading{
+        width: 525px;
+        margin-left: 16px;
+       padding-top: 30px;
+        color: $color2;
+        font-size: 35px;
+        font-weight: bold;
+       
+    }
+    &__desc{
+        width: 525px;
+        margin-left: 16px;
+        padding-top: 30px;
+        color: $color2;
+        justify-content:justify;
+       
+        font-size: 15px;
+    }
+    &--a{
+        margin-left: 16px;
+        color: #04BBF2;
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 30px;
+        
+    }
+
+
+}
+
+   

@@ -1,0 +1,48 @@
+.bx-section7{
+    background-color: #E9E9E9;
+    height: auto;
+
+    &--sub{
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+    }
+    &__column1{
+        width: 15%;
+        height: auto;
+        float: left;
+        margin-left: 3%;
+        margin-top: 2%;
+        margin-bottom: 3%;
+      
+        
+          &--heading{
+            font-size: 15px;
+            font-weight: 500;
+          }
+          &--desc{
+           font-size: 14px; 
+           margin-top: 10px;
+           opacity: .5;
+          }
+    }
+
+   
+}
+      
+      
+@include mobile{
+    .bx-section7{
+    &--sub{
+        width: 100%;
+            display: flex;
+            flex-direction: column; 
+          
+        
+    }
+    &__column1{
+        width: 90%;
+        
+    }
+}
+}

@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  max-width: 100%;
+  font-family: 'Poppins'; }
+
+.bx-header {
+  padding-left: 16px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row; }
+
+.bx-header-left {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 16px; }
+  .bx-header-left p {
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #666666; }
+
+.bx-header-social {
+  margin-top: 10px; }
+  .bx-header-social a {
+    text-decoration: none;
+    margin-left: 3px; }
+  .bx-header-social svg {
+    margin-left: 5px;
+    width: 15.2px;
+    height: 12.39; }
+
+.bx-header-right {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-right: 32px;
+  align-items: end;
+  justify-content: end;
+  text-align: center; }
+
+.bx-header-list {
+  display: flex;
+  flex-direction: row; }
+  .bx-header-list li {
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666666; }
+
+.bx-header--a {
+  width: 140px;
+  height: 25.72px;
+  background-color: #10385B;
+  margin-left: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px; }
+
+.bx-header__hamberger_menu {
+  display: none; }
+
+.bx-header__hamberger_menu img {
+  width: 20px;
+  height: 20px; }
+
+@media (max-width: 620px) {
+  .bx-header {
+    width: 100%; }
+
+  .bx-header__hamberger_menu {
+    display: block; }
+
+  .bx-header-list {
+    display: none; }
+
+  .bx-header--a {
+    display: none; } }
+@media (max-width: 1100px) {
+  .bx-header {
+    width: 100%; }
+
+  .bx-header__hamberger_menu {
+    display: block; }
+
+  .bx-header-list {
+    display: none; }
+
+  .bx-header--a {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */
